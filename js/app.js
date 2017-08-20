@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import { NavBar } from './NavBar.js';
-import { introductionText } from './introductionText.js';
 
 
 class HeaderNav extends React.Component {
@@ -65,27 +64,28 @@ class Main extends React.Component {
 
         <section className="list clearfix">
 
-        	<div className="wrapper">
+          <div className="wrapper">
 
             <FilterList />
 
-        	  <div className="item thumbnail in-view" id="item__modal">
+            <div className="item thumbnail in-view" id="item__modal">
               <h2 className="teaser__title">Name: {this.state.name}</h2>
-    		    	<div id="myModal" className="modal">
-                <ul className="modal-content">
-                  <span className="close">&times;</span>
-      		    		<li><h2 className="teaser__title">Name: {this.state.name}</h2></li> 
-      		    		<li>Birth year: {this.state.birth_year}</li>  
-      		    		<li>Eye color: {this.state.eye_color}</li>  
-      		    		<li>Gender: {this.state.gender}</li>  
-      		    		<li>Hair color: {this.state.hair_color}</li>  
-      		    		<li>Height: {this.state.height}</li>  
-      		    		<li>Skin color: {this.state.skin_color}</li>       
-    		      	</ul>
-              </div>
-  		      </div>
-  	   	  </div>
-	      </section>
+            </div>
+
+            <div id="myModal" className="modal">
+              <ul className="modal-content">
+                <span className="close">&times;</span>
+                <li><h2 className="teaser__title">Name: {this.state.name}</h2></li> 
+                <li>Birth year: {this.state.birth_year}</li>  
+                <li>Eye color: {this.state.eye_color}</li>  
+                <li>Gender: {this.state.gender}</li>  
+                <li>Hair color: {this.state.hair_color}</li>  
+                <li>Height: {this.state.height}</li>  
+                <li>Skin color: {this.state.skin_color}</li>       
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <Footer />
      </div>

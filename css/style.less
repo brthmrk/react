@@ -7,8 +7,8 @@
    ========================================================================== */
 
 ::selection {
-  background: red;
-  color: @white;
+  background: yellow;
+  color: @base;
 }
 
 *,
@@ -211,6 +211,7 @@ section {
   font-family: 'Montserrat', 'Helvetica', sans-serif;
   font-weight: 700;
   color: yellow;
+  padding: .25em 0;
 }
 
 .clearfix:after {
@@ -263,6 +264,10 @@ section {
     &.active {
       background: yellow;
       color: @base;
+
+      &:hover {
+        color: @base;
+      }
     }
 
     &:hover {
@@ -292,15 +297,16 @@ section {
   }
 
   .item {
-    background: rgba(255, 255, 255, 0.14);
-    border-radius: 5px;
+    background: rgb(37, 37, 37);
+    border-radius: 6px;
     text-align: center;
-    width: 100%;
-    padding: 1em;
+    width: 98%;
     float: left;
+    padding: 1%;
+    margin: 1%;
 
     &.thumbnail {
-      width: 50%;
+      width: 46%;
     }
   }
 }
@@ -316,34 +322,31 @@ section {
     width: 50%;
     padding: 2em;
     margin: 0 auto;
-    right: 0;
-}
+    right: 0; 
 
-/* Modal Content */
-.modal-content {
-    background: #272727;
+  .modal-content {
+    background: #212121;
     margin: auto;
     padding: 20px;
     box-shadow: -1px 3px 11px 0px rgba(0, 0, 0, 0.53);
     width: 100%;
-}
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 2em;
-    display: block;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-}
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 2em;
+      display: block;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+      &:hover, &:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 /* ------------------------------ 
@@ -384,64 +387,6 @@ header {
               opacity: 1;
             }
           }
-        }
-      }
-    }
-  }
-
-  .logo {
-    display: none;
-    
-    a {
-      
-    }
-  }
-}
-
-/* ------------------------------ 
-          FOOTER
------------------------------- */
-
-footer, #footer {
-  width: 100%;
-  padding: 1em 0;
-  border-top: 1px solid #DEDFE0;
-  color: #505050;
-  background: #EFF2F1;
-  text-align: left;
-  transition: all .5s cubic-bezier(.645,.045,.355,1);
-  
-  .follow {
-    text-align: center;
-
-    ul {
-      li {
-        display: inline-block;
-        padding: 0.25em;
-      }
-    }
-  }
-
-  address {
-    font-style: inherit;
-  }
-
-  .footer__business {
-    border-top: 1px solid rgba(134,148,149,0.12);
-
-    ul li {
-      display: block;
-
-      p, span {
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-      }
-
-      a {
-
-        &:hover {
-          border-bottom: 1px solid @base;
         }
       }
     }

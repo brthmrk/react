@@ -13,8 +13,6 @@ export class NavBar extends React.Component {
       )
     });
 
-    return <header><div className="wrapper"><figure className="logo"><img src="http://www.pngall.com/wp-content/uploads/2016/03/Star-Wars-Logo-PNG.png" /></figure><nav className="main__navigation"><ul>{navLinks}</ul></nav></div></header>;
+    return <header><div className="wrapper"><nav className="main__navigation"><ul>{navLinks}</ul></nav></div></header>;
   }
 }
-
-
